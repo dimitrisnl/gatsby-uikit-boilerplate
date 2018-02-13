@@ -10,7 +10,7 @@ export class CardsRow extends Component {
           <div className="columns is-centered">
             <div className="column is-3">
               <div className="card">
-                <div className="card-image columns is-centered">
+                <div className="card-image flex justify-content-center">
                   <figure className="image is-128x128 column is-narrow m-t-md">
                     <img
                       src="https://source.unsplash.com/random/128x128"
@@ -33,7 +33,7 @@ export class CardsRow extends Component {
             </div>
             <div className="column is-3">
               <div className="card">
-                <div className="card-image columns is-centered">
+                <div className="card-image flex justify-content-center">
                   <figure className="image is-128x128 column is-narrow m-t-md">
                     <img
                       src="https://source.unsplash.com/random/128x128"
@@ -56,7 +56,7 @@ export class CardsRow extends Component {
             </div>
             <div className="column is-3">
               <div className="card">
-                <div className="card-image columns is-centered">
+                <div className="card-image flex justify-content-center">
                   <figure className="image is-128x128 column is-narrow m-t-md">
                     <img
                       src="https://source.unsplash.com/random/128x128"
