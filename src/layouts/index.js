@@ -14,19 +14,21 @@ class TemplateWrapper extends Component {
       const uikit = require('uikit');
       const icons = require('uikit/dist/js/uikit-icons.min');
       uikit.use(icons);
-      setTimeout(() => {
-        this.setState({ ready: true });
-      }, 1500);
+      this.setState({ ready: true });
     }
   };
 
   render() {
     return (
-      <Wrapper ready={this.state.ready}>
-        <Navigation />
-        <Main>{this.props.children()}</Main>
-        <Footer />
-      </Wrapper>
+      <div>
+        {this.state.ready && (
+          <Wrapper>
+            <Navigation />
+            <Main>{this.props.children()}</Main>
+            <Footer />
+          </Wrapper>
+        )}
+      </div>
     );
   }
 }
@@ -41,8 +43,16 @@ const Wrapper = styled.div`
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  opacity: ${props => (props.ready ? '1' : '0')};
-  transition: opacity 0.3s ease-in-out;
+  animation: appear 0.5s forwards;
+
+  @keyframes appear {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
 `;
 const Main = styled.div`
   flex: 1;
