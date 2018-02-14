@@ -10,7 +10,6 @@ import Icons from 'uikit/dist/js/uikit-icons.min';
 Uikit.use(Icons);
 
 import './styles.scss';
-import 'animate.css/animate.css';
 
 const TemplateWrapper = ({ children }) => (
   <div className="uk-section-default uk-preserve-color">
