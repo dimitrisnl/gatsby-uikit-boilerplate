@@ -4,8 +4,10 @@ export class Comments extends Component {
   render() {
     return (
       <div className="uk-section">
-        <div className="uk-container uk-container-small">
-          <h3>Here's what people say</h3>
+        <div className="uk-container uk-container-small uk-section-default">
+          <h3 className="uk-heading-line uk-text-right">
+            <span>Here's what people have to say</span>
+          </h3>
           <div data-uk-slideshow="autoplay: true; min-height: 200; max-height: 300">
             <ul className="uk-slideshow-items">
               <li>

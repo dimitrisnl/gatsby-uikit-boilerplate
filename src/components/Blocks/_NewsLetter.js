@@ -5,7 +5,7 @@ export class NewsLetter extends Component {
     return (
       <div className="uk-section uk-section-primary uk-light">
         <div className="uk-container">
-          <h3 className="uk-flex uk-flex-center">Susbcribe</h3>
+          <h3 className="uk-flex uk-flex-center">Subscribe</h3>
 
           <form className="uk-flex uk-flex-center">
             <input

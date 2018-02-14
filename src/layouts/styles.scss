@@ -1,28 +1,7 @@
-// // 1. Import the initial Bulma variables
-// @import 'node_modules/bulma/sass/utilities/initial-variables';
+$global-muted-background: #eceff4;
+$global-primary-background: #88c0d0;
+$global-secondary-background: #81a1c1;
 
-// // 2. Override them
-
-// // $family-sans-serif: -apple-system, system-ui, BlinkMacSystemFont, Segoe UI,
-// //   Roboto, Helvetica Neue, Arial, sans-serif;
-
-// // 3. Import Rest of Bulma
-// // @import 'node_modules/bulma/bulma';
-
-// // 4. Import Bootstrap Helpers
-// @import 'node_modules/bootstrap/scss/functions';
-// @import 'node_modules/bootstrap/scss/variables';
-// @import 'node_modules/bootstrap/scss/mixins';
-
-// // 5. Import Bootstrap Grid
-// @import 'node_modules/bootstrap/scss/grid';
-
-// 1. Your custom variables and variable overwrites.
-$global-link-color: #da7d02;
-
-// 2. Import default variables and available mixins.
 @import 'node_modules/uikit/src/scss/variables-theme.scss';
 @import 'node_modules/uikit/src/scss/mixins-theme.scss';
-
-// 4. Import UIkit.
 @import 'node_modules/uikit/src/scss/uikit-theme.scss';
