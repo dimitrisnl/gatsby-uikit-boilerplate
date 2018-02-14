@@ -1,7 +1,12 @@
 $global-muted-background: #eceff4;
 $global-primary-background: #88c0d0;
 $global-secondary-background: #81a1c1;
+$navbar-background: $global-primary-background;
 
 @import 'node_modules/uikit/src/scss/variables-theme.scss';
 @import 'node_modules/uikit/src/scss/mixins-theme.scss';
 @import 'node_modules/uikit/src/scss/uikit-theme.scss';
+
+.headroom-wrapper {
+  height: auto !important;
+}
