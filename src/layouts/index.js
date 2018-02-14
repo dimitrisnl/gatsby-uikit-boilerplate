@@ -4,16 +4,16 @@ import Helmet from 'react-helmet';
 import styled from 'react-emotion';
 
 import { Footer, Navigation } from 'Blocks';
-import Icons from 'uikit/dist/js/uikit-icons.min';
-
-// Uikit.use(Icons);
 
 import './styles.scss';
 
 class TemplateWrapper extends Component {
   componentDidMount() {
-    const isBrowser = typeof window !== 'undefined';
-    isBrowser && require('uikit') && require('uikit/dist/js/uikit-icons.min');
+    if (typeof window !== 'undefined') {
+      const uikit = require('uikit');
+      const icons = require('uikit/dist/js/uikit-icons.min');
+      uikit.use(icons);
+    }
   }
   render() {
     return (
