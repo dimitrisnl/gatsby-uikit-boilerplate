@@ -3,83 +3,26 @@ import React, { Component } from 'react';
 export class CardsRow extends Component {
   render() {
     return (
-      <section className="section m-t-xl">
-        <h4 className="subtitle is-3 has-text-centered">Ok listen here</h4>
+      <div className="uk-section uk-section-primary uk-preserve-color">
+        <div className="uk-container">
+          <div className="uk-panel uk-light uk-margin-medium">
+            <h3>Section Primary with cards</h3>
+          </div>
 
-        <div className="container">
-          <div className="columns is-centered">
-            <div className="column is-3">
-              <div className="card">
-                <div className="card-image flex justify-content-center">
-                  <figure className="image is-128x128 column is-narrow m-t-md">
-                    <img
-                      src="https://source.unsplash.com/random/128x128"
-                      alt="Placeholder image"
-                      className="rounded-circle"
-                    />
-                  </figure>
-                </div>
-                <div className="card-content">
-                  <h3 className="subtitle is-4 has-text-centered">
-                    Lorem ipsum dolor
-                  </h3>
-                  <div className="content">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Phasellus nec iaculis mauris. Lorem ipsum dolor sit amet,
-                    consectetur adipiscing elit. Phasellus nec iaculis mauris.
-                  </div>
-                </div>
+          <div className="uk-grid-match uk-child-width-expand@m" data-uk-grid>
+            <div>
+              <div className="uk-card uk-card-default uk-card-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
               </div>
             </div>
-            <div className="column is-3">
-              <div className="card">
-                <div className="card-image flex justify-content-center">
-                  <figure className="image is-128x128 column is-narrow m-t-md">
-                    <img
-                      src="https://source.unsplash.com/random/128x128"
-                      alt="Placeholder image"
-                      className="rounded-circle"
-                    />
-                  </figure>
-                </div>
-                <div className="card-content">
-                  <h3 className="subtitle is-4 has-text-centered">
-                    Lorem ipsum dolor
-                  </h3>
-                  <div className="content">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Phasellus nec iaculis mauris. Lorem ipsum dolor sit amet,
-                    consectetur adipiscing elit. Phasellus nec iaculis mauris.
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="column is-3">
-              <div className="card">
-                <div className="card-image flex justify-content-center">
-                  <figure className="image is-128x128 column is-narrow m-t-md">
-                    <img
-                      src="https://source.unsplash.com/random/128x128"
-                      alt="Placeholder image"
-                      className="rounded-circle"
-                    />
-                  </figure>
-                </div>
-                <div className="card-content">
-                  <h3 className="subtitle is-4 has-text-centered">
-                    Lorem ipsum dolor
-                  </h3>
-                  <div className="content">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Phasellus nec iaculis mauris. Lorem ipsum dolor sit amet,
-                    consectetur adipiscing elit. Phasellus nec iaculis mauris.
-                  </div>
-                </div>
+            <div>
+              <div className="uk-card uk-card-default uk-card-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
     );
   }
 }

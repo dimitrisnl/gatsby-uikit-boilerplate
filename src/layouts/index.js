@@ -3,12 +3,17 @@ import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 
 import { Footer, Navigation } from 'Blocks';
+
+import Uikit from 'uikit/dist/js/uikit.min';
+import Icons from 'uikit/dist/js/uikit-icons.min';
+
+Uikit.use(Icons);
+
 import './styles.scss';
 import 'animate.css/animate.css';
-import 'font-awesome/css/font-awesome.css';
 
 const TemplateWrapper = ({ children }) => (
-  <div>
+  <div className="uk-section-secondary uk-preserve-color">
     <Navigation />
     <div>{children()}</div>
     <Footer />

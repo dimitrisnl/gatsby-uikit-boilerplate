@@ -3,31 +3,32 @@ import React, { Component } from 'react';
 export class NewsLetter extends Component {
   render() {
     return (
-      <section className="hero is-primary m-t-xl">
-        <div className="hero-body">
-          <div className="container">
-            <h4 className="subtitle is-3 has-text-centered">
-              Would you think of the emails
-            </h4>
-            <div className="columns is-centered">
-              <div className="column is-narrow">
-                <div className="field has-addons">
-                  <div className="control">
-                    <input
-                      className="input is-rounded"
-                      type="text"
-                      placeholder="Your Email"
-                    />
-                  </div>
-                  <div className="control">
-                    <a className="button is-rounded">Send me stuff</a>
-                  </div>
-                </div>
-              </div>
+      <div className="uk-section uk-section-secondary uk-light">
+        <div className="uk-container">
+          <h3>Section Secondary</h3>
+
+          <div className="uk-grid-match uk-child-width-1-3@m" data-uk-grid>
+            <div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor.
+              </p>
+            </div>
+            <div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor.
+              </p>
+            </div>
+            <div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor.
+              </p>
             </div>
           </div>
         </div>
-      </section>
+      </div>
     );
   }
 }

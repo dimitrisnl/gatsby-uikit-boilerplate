@@ -4,46 +4,40 @@ import styled from 'react-emotion';
 export class Hero extends Component {
   render() {
     return (
-      <Section className="hero is-fullheight">
-        <div className="hero-body">
-          <div className="container">
-            <div className="columns">
-              <div className="column is-half">
-                <h1 className="title is-3 has-text-primary">
-                  Lorem ipsum dolor sit amet.
-                </h1>
-                <h3 className="subtitle is-5 has-text-white">
-                  Vivamus augue orci, scelerisque non nibh ut, molestie cursus
-                  tortor. Nulla in faucibus ipsum.
-                </h3>
-              </div>
-            </div>
-          </div>
-          {/* <div>
-            <img src="https://source.unsplash.com/random/800x600" />
-          </div> */}
+      <div className="uk-section uk-section-secondary uk-light">
+        <div className="uk-container">
+          <h2 className="uk-heading-primary">Lorem ipsum dolor sit amet</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum.
+          </p>
+
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum.
+          </p>
         </div>
-        <Background />
-      </Section>
+      </div>
     );
+    // <Cover
+    //   className="uk-height-large uk-background-cover uk-light uk-flex"
+    //   data-uk-parallax="bgy: -200"
+    // >
+    //   <h1 className="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical">
+    //     Headline
+    //   </h1>
+    // </Cover>
   }
 }
 
 export default Hero;
 
-const Background = styled.div`
+const Cover = styled.div`
   background-image: url(https://images.unsplash.com/photo-1484353371297-d8cfd2895020?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e1c9d0e98f08ebe1cbabaa3f71e22440&dpr=1&auto=format&fit=crop&w=1000&q=80&cs=tinysrgb);
-  background-attachment: fixed;
-  background-size: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-`;
-
-const Section = styled.div`
-  background: #00000090;
-  position: relative;
 `;
