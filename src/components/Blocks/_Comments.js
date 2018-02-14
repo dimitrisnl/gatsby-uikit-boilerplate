@@ -4,7 +4,8 @@ export class Comments extends Component {
   render() {
     return (
       <div className="uk-section">
-        <div className="uk-container">
+        <div className="uk-container uk-container-small">
+          <h3>Here's what people say</h3>
           <div data-uk-slideshow="autoplay: true; min-height: 200; max-height: 300">
             <ul className="uk-slideshow-items">
               <li>
@@ -27,7 +28,7 @@ export class Comments extends Component {
                         <div className="uk-width-expand">
                           <h4 className="uk-comment-title uk-margin-remove">
                             <a className="uk-link-reset" href="#">
-                              Author
+                              KoroJohn
                             </a>
                           </h4>
                           <ul className="uk-comment-meta uk-subnav uk-subnav-divider uk-margin-remove-top">
@@ -71,7 +72,7 @@ export class Comments extends Component {
                         <div className="uk-width-expand">
                           <h4 className="uk-comment-title uk-margin-remove">
                             <a className="uk-link-reset" href="#">
-                              Author
+                              KoroJohn
                             </a>
                           </h4>
                           <ul className="uk-comment-meta uk-subnav uk-subnav-divider uk-margin-remove-top">

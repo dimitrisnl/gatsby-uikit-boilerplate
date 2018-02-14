@@ -8,7 +8,7 @@ export class Stats extends Component {
           <div
             className="uk-child-width-expand@s uk-text-center"
             data-uk-grid-parallax
-            data-uk-scrollspy="target: > div; cls:uk-animation-fade; delay: 500"
+            data-uk-scrollspy="target: > div; cls:uk-animation-fade; delay: 300"
           >
             <div>
               <div className="uk-card uk-card-default uk-card-body uk-grid-margin uk-card-hover">

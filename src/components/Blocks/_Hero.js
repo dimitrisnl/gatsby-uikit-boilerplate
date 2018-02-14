@@ -4,8 +4,8 @@ import styled from 'react-emotion';
 export class Hero extends Component {
   render() {
     return (
-      <div className="uk-section uk-section-secondary uk-light">
-        <div className="uk-container">
+      <div className="uk-section uk-section-default uk-dark">
+        <div className="uk-container uk-container-small">
           <h2 className="uk-heading-primary">Lorem ipsum dolor sit amet</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

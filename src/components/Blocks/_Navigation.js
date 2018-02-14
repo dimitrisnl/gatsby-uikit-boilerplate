@@ -4,7 +4,10 @@ import Link from 'gatsby-link';
 export class Navigation extends Component {
   render() {
     return (
-      <div data-uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent uk-light; top: 200">
+      <div
+        id="top"
+        data-uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent uk-dark; top: 200"
+      >
         <nav className="uk-navbar-container">
           <div className="uk-container uk-container-expand">
             <div data-uk-navbar>

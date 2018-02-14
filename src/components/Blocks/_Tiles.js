@@ -4,28 +4,52 @@ export class Tiles extends Component {
   render() {
     return (
       <div
-        className="uk-child-width-1-2@s uk-grid-collapse uk-text-center"
+        className="uk-child-width-1-2@s uk-grid-collapse uk-text-center uk-box-shadow-large"
         data-uk-grid
-        data-uk-scrollspy="target: > div; cls:uk-animation-fade; delay: 500"
+        data-uk-scrollspy="target: p; cls:uk-animation-fade; delay: 500"
       >
         <div>
           <div className="uk-tile uk-tile-default">
-            <p className="uk-h4">We do this</p>
+            <h4 className="uk-h4">We do this</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ornare
+              massa felis, sit amet placerat nisi cursus a. Cras diam turpis,
+              sodales ac ullamcorper vel, lobortis ut tellus. Curabitur ut
+              iaculis dolor.
+            </p>
           </div>
         </div>
         <div>
           <div className="uk-tile uk-tile-muted">
-            <p className="uk-h4">We also do that</p>
+            <h4 className="uk-h4">We do this</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ornare
+              massa felis, sit amet placerat nisi cursus a. Cras diam turpis,
+              sodales ac ullamcorper vel, lobortis ut tellus. Curabitur ut
+              iaculis dolor.
+            </p>
           </div>
         </div>
         <div>
           <div className="uk-tile uk-tile-primary">
-            <p className="uk-h4">But we definitely do this first</p>
+            <h4 className="uk-h4">We do this</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ornare
+              massa felis, sit amet placerat nisi cursus a. Cras diam turpis,
+              sodales ac ullamcorper vel, lobortis ut tellus. Curabitur ut
+              iaculis dolor.
+            </p>
           </div>
         </div>
         <div>
           <div className="uk-tile uk-tile-secondary">
-            <p className="uk-h4">On lazy days this too</p>
+            <h4 className="uk-h4">We do this</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ornare
+              massa felis, sit amet placerat nisi cursus a. Cras diam turpis,
+              sodales ac ullamcorper vel, lobortis ut tellus. Curabitur ut
+              iaculis dolor.
+            </p>
           </div>
         </div>
       </div>

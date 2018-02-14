@@ -13,7 +13,7 @@ import './styles.scss';
 import 'animate.css/animate.css';
 
 const TemplateWrapper = ({ children }) => (
-  <div className="uk-section-secondary uk-preserve-color">
+  <div className="uk-section-default uk-preserve-color">
     <Navigation />
     <div>{children()}</div>
     <Footer />
