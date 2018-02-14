@@ -38,8 +38,8 @@ const Wrapper = styled.div`
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  opacity: ${props => (props.ready ? '1' : '0')}
-  transition: opacity .3s ease-in-out;
+  opacity: ${props => (props.ready ? '1' : '0')};
+  transition: opacity 0.3s ease-in-out;
 `;
 const Main = styled.div`
   flex: 1;
