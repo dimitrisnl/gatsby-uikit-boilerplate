@@ -9,7 +9,7 @@ export class NewsLetter extends Component {
 
           <form className="uk-flex uk-flex-center">
             <input
-              className="uk-input uk-width-1-2"
+              className="uk-input uk-width-1-2@s"
               type="text"
               placeholder="Email"
             />

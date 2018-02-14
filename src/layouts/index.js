@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
+import styled from 'react-emotion';
 
 import { Footer, Navigation } from 'Blocks';
 
@@ -12,11 +13,11 @@ Uikit.use(Icons);
 import './styles.scss';
 
 const TemplateWrapper = ({ children }) => (
-  <div className="uk-section-default uk-preserve-color">
+  <Wrapper>
     <Navigation />
-    <div>{children()}</div>
+    <Main>{children()}</Main>
     <Footer />
-  </div>
+  </Wrapper>
 );
 
 TemplateWrapper.propTypes = {
@@ -24,3 +25,12 @@ TemplateWrapper.propTypes = {
 };
 
 export default TemplateWrapper;
+
+const Wrapper = styled.div`
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+`;
+const Main = styled.div`
+  flex: 1;
+`;

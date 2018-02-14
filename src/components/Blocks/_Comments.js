@@ -8,8 +8,11 @@ export class Comments extends Component {
           <h3 className="uk-heading-line uk-text-right">
             <span>Here's what people have to say</span>
           </h3>
-          <div data-uk-slideshow="autoplay: true; min-height: 200; max-height: 300">
-            <ul className="uk-slideshow-items">
+          <div
+            className="uk-position-relative uk-visible-toggle uk-flex uk-flex-center"
+            data-uk-slideshow="autoplay: true; min-height: 200; max-height: 300"
+          >
+            <ul className="uk-slideshow-items uk-width-4-5 ">
               <li>
                 <div className="uk-position-center uk-position-small">
                   <div data-uk-slideshow-parallax="x: 100,-100">
@@ -99,6 +102,22 @@ export class Comments extends Component {
                 </div>
               </li>
             </ul>
+            <a
+              className="uk-position-center-left uk-position-small"
+              href="#"
+              data-uk-slidenav-previous
+              data-uk-slideshow-item="previous"
+            >
+              <span data-uk-icon="chevron-left" />
+            </a>
+            <a
+              className="uk-position-center-right uk-position-small"
+              href="#"
+              data-uk-slidenav-next
+              data-uk-slideshow-item="next"
+            >
+              <span data-uk-icon="chevron-right" />
+            </a>
           </div>
         </div>
       </div>
