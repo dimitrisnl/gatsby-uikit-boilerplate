@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import styled from 'react-emotion';
 
-import { Footer, Navigation } from 'Blocks';
+import { Footer, Navigation, OffCanvas } from 'Layout';
 
 import './styles.scss';
 
@@ -26,6 +26,7 @@ class TemplateWrapper extends Component {
             <Navigation />
             <Main>{this.props.children()}</Main>
             <Footer />
+            <OffCanvas />
           </Wrapper>
         )}
       </div>

@@ -11,7 +11,7 @@ export class Navigation extends Component {
         <nav className="uk-navbar-container">
           <div className="uk-container uk-container-expand">
             <div data-uk-navbar>
-              <div className="uk-navbar-left">
+              <div className="uk-navbar-left uk-visible@m">
                 <ul className="uk-navbar-nav">
                   <li>
                     <Link to="page-2">Page 2</Link>
@@ -34,6 +34,8 @@ export class Navigation extends Component {
                   </li>
                 </ul>
               </div>
+              <div className="uk-padding uk-hidden@m" />
+
               <div className="uk-navbar-center">
                 <Link className="uk-logo" to="/">
                   Company
@@ -41,9 +43,18 @@ export class Navigation extends Component {
               </div>
               <div className="uk-navbar-right">
                 <ul className="uk-navbar-nav">
-                  <li>
+                  <li className="uk-visible@m">
                     <button className="uk-button uk-button-primary">
                       Request a Demo
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      className="uk-hidden@m uk-button-default uk-margin-medium-right"
+                      data-uk-toggle="target: #offcanvas"
+                      type="button"
+                    >
+                      <span data-uk-icon="menu" />
                     </button>
                   </li>
                 </ul>
